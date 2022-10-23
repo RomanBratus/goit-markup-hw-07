@@ -276,7 +276,7 @@ margin-right: 10px;
     margin-top: 20px;
 }
 
-.basement-soc {
+.basement__subtitle {
     color: var(--additional-text-color);
     margin-bottom: 20px;
 }
@@ -649,12 +649,17 @@ fill: var(--primery-text-color);
 
 /* title options (налаштування назви) */
 .our-features-title,
-.img-label {
+.img-label,
+.basement__subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.our-features-title,
+.img-label {
     margin-bottom: 10px;
 }
 
