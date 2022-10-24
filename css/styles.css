@@ -688,7 +688,7 @@ fill: var(--primery-text-color);
 /* title in section 3 and 4  */
 .img-section-title, 
 .our-team-main-title, 
-.partners-main-title{
+.partners-title{
     color: var(--primery-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -834,7 +834,7 @@ fill: var(--additional-text-color);
 
 /* .partners-list{} */
 
-.partners-link{
+.partners-group__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -845,14 +845,13 @@ fill: var(--additional-text-color);
     height: 92px;
     fill: var(--social-main-color);
 }
-
-.partners-link:hover, 
-.partners-link:focus{
+.partners-group__link:hover, 
+.partners-group__link:focus{
     fill: var(--text-hover-color);
     border: 1px solid var(--text-hover-color);
 }
 
-/* .partners-icon{} */
+/* .partners-group__icon{} */
 
 
 /* ++++++++++++++++++++++++++ PAGE 2 portfolio.html +++++++++++++++++++++++++  */
