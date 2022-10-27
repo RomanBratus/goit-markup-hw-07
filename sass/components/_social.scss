@@ -1,0 +1,28 @@
+.soc-group,
+.basement-social__group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.soc-list,
+.basement-social__list {
+  list-style: none;
+  display: contents;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--social-main-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--text-hover-color);
+    fill: var(--additional-text-color);
+  }
+}

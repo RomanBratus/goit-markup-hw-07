@@ -1,0 +1,17 @@
+:root{
+    --primery-text-color: #212121;
+    --additional-text-color: #FFFFFF;
+    --paragraph-tex-color: #757575;
+    --text-hover-color: #2196F3;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --background-color: #ffffff;
+    --background-color-additional: #2f303a;
+    --background-color-special: #F5F4FA;
+    --social-main-color: #AFB1B8;
+}
+
+.hover-transition {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
