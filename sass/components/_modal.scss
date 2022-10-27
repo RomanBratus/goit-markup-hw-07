@@ -42,9 +42,10 @@
   align-items: center;
 
   cursor: pointer;
-  &:hover .modal-icon {
-    fill: var(--text-hover-color);
-  }
+}
+
+.close-button:hover .modal-icon {
+  fill: var(--text-hover-color);
 }
 
 .modal-title {
@@ -153,12 +154,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
-  &:checked + .custom-checkbox {
-    background-color: var(--text-hover-color);
-    border: none;
-    fill: var(--additional-text-color);
-  }
 }
 
 .custom-checkbox {
@@ -173,6 +168,11 @@
   border-radius: 2px;
 
   fill: transparent;
+  .checkbox:checked + & {
+    background-color: var(--text-hover-color);
+    border: none;
+    fill: var(--additional-text-color);
+  }
 }
 
 .checkbox-input-icon {

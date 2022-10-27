@@ -4,7 +4,11 @@
 
 /* .our-team-main-title {} */
 
-/* our-team-group{} */
+.our-team-group {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
 
 .our-team-group__list {
   margin: 0 auto;
@@ -41,3 +45,4 @@
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
+

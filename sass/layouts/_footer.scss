@@ -38,23 +38,15 @@
 .basement-contacts__address {
   color: var(--additional-text-color);
 }
-/* .basement-contacts__address:hover,
-.basement-contacts__address:focus {
-    color: var(--text-hover-color);
-} */
+.basement-contacts__mail,
+.basement-contacts__tel {
+  color: var(--footer-contact-color);
+}
 
 .basement-contacts__hover:hover {
   color: var(--text-hover-color);
 }
 
-/* footer contacts options (налаштування контактів в підвалі) */
-.basement-contacts__mail,
-.basement-contacts__tel {
-  color: var(--footer-contact-color);
-}
-/* .basement-contacts:hover,
-.basement-contacts:focus,
- */
 
 .basement-container {
   display: flex;
