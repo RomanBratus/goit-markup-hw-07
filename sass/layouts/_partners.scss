@@ -1,14 +1,13 @@
-/* =================== partners (наша команда) section =================== */
-.partners-group {
+.partners__list {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-/* .partners-list{} */
+/* .partners__item{} */
 
-.partners-group__link {
+.partners__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,4 +25,4 @@
   }
 }
 
-/* .partners-group__icon{} */
+/* .partners__icon{} */
