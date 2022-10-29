@@ -17,7 +17,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Студія</title>
   </head>
@@ -29,8 +28,8 @@
         <nav class="topbar-navigation">
           <!-- Логотип -->
           <a href="./index.html" class="logo link-options"
-            ><span class="word-web">Web</span
-            ><span class="studio-header">Studio</span></a
+            ><span class="logo__web">Web</span
+            ><span class="logo__studio-dark">Studio</span></a
           >
           <!-- Навігація по сторінці -->
           <ul class="topbar-navigation__list">
@@ -667,41 +666,41 @@
     <!-- Підвал сторінки -->
     <footer class="basement">
       <div class="container basement-container">
-        <div class="basement-logo-con">
+        <div class="basement-con">
           <a href="./index.html" class="logo link-options logo-basement"
-            ><span class="word-web">Web</span
-            ><span class="studio-footer">Studio</span></a
+            ><span class="logo__web">Web</span
+            ><span class="logo__studio-white">Studio</span></a
           >
-          <address class="basement-adress-section">
+          <address class="basement-contacts">
             <ul class="basement-contacts__list">
-              <li class="basement-contacts__group">
+              <li class="basement-contacts__item">
                 <a
                   href="https://goo.gl/maps/L8f5SfHQkq7jRVht7"
-                  class="link-options basement-contacts__address hover-transition basement-contacts__hover"
+                  class="basement-contacts__link link-options basement-contacts-address hover-transition"
                   >м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li class="basement-contacts__group">
+              <li class="basement-contacts__item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="link-options basement-contacts__mail hover-transition basement-contacts__hover"
+                  class="basement-contacts__link link-options basement-contacts-mail hover-transition"
                   >info@devstudio.com
                 </a>
               </li>
-              <li class="basement-contacts__group">
+              <li class="basement-contacts__item">
                 <a
                   href="tel:+380961111111"
-                  class="link-options basement-contacts__tel hover-transition basement-contacts__hover"
+                  class="basement-contacts__link link-options basement-contacts-tel hover-transition"
                   >+38 096 111 11 11
                 </a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="basement-icon-group">
+        <div class="basement-social">
           <p class="basement__subtitle">приєднуйтесь</p>
-          <ul class="basement-social__group">
-            <li class="basement-social__list">
+          <ul class="basement-social__list">
+            <li class="basement-social__item">
               <a
                 href="#"
                 class="link-options basement-social__link hover-transition"
@@ -713,7 +712,7 @@
                 </svg>
               </a>
             </li>
-            <li class="basement-social__list">
+            <li class="basement-social__item">
               <a
                 href="#"
                 class="link-options basement-social__link hover-transition"
@@ -725,7 +724,7 @@
                 </svg>
               </a>
             </li>
-            <li class="basement-social__list">
+            <li class="basement-social__item">
               <a
                 href="#"
                 class="basement-social__link link-options hover-transition"
@@ -737,7 +736,7 @@
                 </svg>
               </a>
             </li>
-            <li class="basement-social__list">
+            <li class="basement-social__item">
               <a
                 href="#"
                 class="basement-social__link link-options hover-transition"
@@ -751,12 +750,12 @@
             </li>
           </ul>
         </div>
-        <form class="basement-email-group" name="signup_form" autocomplete="on">
+        <form class="basement-submit" name="signup_form" autocomplete="on">
           <p class="basement__subtitle">підпишіться на розсилку</p>
-          <div class="basement-label-container">
-            <label class="basement-label">
+          <div class="basement-submit-container">
+            <label class="basement-submit__label">
               <input
-                class="basement-label__input"
+                class="basement-submit__input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
@@ -765,10 +764,10 @@
             </label>
             <button
               type="submit"
-              class="basement-button__submit hero-button hover-transition"
+              class="basement-submit__button hero-button hover-transition"
             >
               Підписатися<svg
-                class="basement-button__icon"
+                class="basement-submit__icon"
                 width="24"
                 height="24"
               >

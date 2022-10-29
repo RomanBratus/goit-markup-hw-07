@@ -1,17 +1,18 @@
 .soc-group,
-.basement-social__group {
+.basement-social__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
 .soc-list,
-.basement-social__list {
+.basement-social__item {
   list-style: none;
   display: contents;
 }
 
-.social-link {
+.social-link,
+.basement-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,3 +27,15 @@
     fill: var(--additional-text-color);
   }
 }
+
+.basement-social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--additional-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--text-hover-color);
+  }
+}
+
+/* .basement-social__icon{} */

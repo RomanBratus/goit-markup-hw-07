@@ -1,4 +1,3 @@
-/* -====================== FOOTER section (підвал сайту) ======================*/
 /* footer section options (налаштування підвалу) */
 .basement {
   background-color: var(--background-color-additional);
@@ -6,17 +5,27 @@
   padding-bottom: 60px;
 }
 
+.basement__subtitle {
+  color: var(--additional-text-color);
+  margin-bottom: 20px;
+}
+
+.basement-container {
+  display: flex;
+  align-items: baseline;
+}
+
 /* footer list options (налаштування списку в підвалі) */
+.basement-contacts {
+  margin-top: 20px;
+}
+
 .basement-contacts__list {
   display: inline;
   list-style: none;
 }
 
-.basement-logo {
-  margin-bottom: 30px;
-}
-
-.basement-contacts__group {
+.basement-contacts__item {
   display: block;
   margin-bottom: 9px;
   &:last-child {
@@ -24,85 +33,53 @@
   }
 }
 
-/* footer address options (налаштування адреси в підвалі) */
-.basement-contacts__address,
-.basement-contacts__mail,
-.basement-contacts__tel {
+.basement-contacts__link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: var(--text-hover-color);
+  }
 }
 
-.basement-contacts__address {
+.basement-contacts-address {
   color: var(--additional-text-color);
 }
-.basement-contacts__mail,
-.basement-contacts__tel {
+.basement-contacts-mail,
+.basement-contacts-tel {
   color: var(--footer-contact-color);
 }
 
-.basement-contacts__hover:hover {
-  color: var(--text-hover-color);
-}
-
-
-.basement-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.basement-adress-section {
-  margin-top: 20px;
-}
-
-.basement__subtitle {
-  color: var(--additional-text-color);
-  margin-bottom: 20px;
-}
-
-.basement-icon-group {
+/* footer social options (налаштування соц-мереж в підвалі) */
+.basement-social {
   display: block;
   width: 206px;
   height: 80px;
   margin-left: 70px;
 }
 
-.basement-social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--additional-text-color);
+// *- налаштування соц мереж в social.scss //
 
-  &:hover,
-  &:focus {
-    background-color: var(--text-hover-color);
-  }
-}
+// !- footer form - /
 
-/* .basement-social__icon{} */
-
-/* !----------------------------- footer form ----------------------------- */
-
-.basement-email-group {
+.basement-submit {
   display: block;
   width: 570px;
   height: 86px;
   margin-left: 93px;
 }
 
-.basement-label-container {
+.basement-submit-container {
   display: flex;
 }
 
-/* .basement-label{} */
+/* .basement-submit__label{} */
 
-.basement-label__input {
+.basement-submit__input {
   background-color: transparent;
   font-style: sans-serif;
   color: var(--additional-text-color);
@@ -124,7 +101,7 @@
 
 // footer button options
 
-.basement-button__submit {
+.basement-submit__button {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -134,6 +111,6 @@
   gap: 10px;
 }
 
-.basement-button__icon {
+.basement-submit__icon {
   fill: var(--background-color-special);
 }
