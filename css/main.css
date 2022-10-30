@@ -866,56 +866,60 @@ ol {
   border-radius: 4px;
 }
 
-.porfolio-link-list {
+.projects {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.porfolio-link-group {
+.projects__item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.portfolio-links {
+.projects__link {
   display: block;
 }
-
-.portfolio-links:hover,
-.portfolio-links:focus {
+.projects__link:hover, .projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.image-portfolio {
+.projects__image-container {
   position: relative;
   overflow: hidden;
 }
 
-.image-portfolio:hover .image-overlay {
-  transform: translatex(0);
+.projects__image {
+  display: block;
 }
 
-.image-overlay {
+.projects__image-overlay {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--additional-text-color);
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
-  font-family: sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  color: var(--additional-text-color);
-  background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms ease;
 }
-
-.porfolio-link-img {
-  display: block;
+.projects__image-container:hover .projects__image-overlay {
+  transform: translatex(0);
 }
 
-.porfolio-link-title {
+.projects__image-header {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.projects__image-title {
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -923,14 +927,7 @@ ol {
   letter-spacing: 0.06em;
 }
 
-.portfolio-tex-under-img {
-  border-bottom: 1px solid #EEEEEE;
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  padding: 20px 24px;
-}
-
-.porfolio-link-text {
+.projects__image-subtitle {
   color: var(--paragraph-tex-color);
   font-size: 16px;
   line-height: 1.87;
