@@ -1,19 +1,13 @@
 // hero button options
+// * налаштування тексту в variables.scss //
 .hero-div-btn {
   display: flex;
   justify-content: center;
 }
 
 .hero-button {
-  color: var(--additional-text-color);
   background: var(--text-hover-color);
   cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  text-align: center;
   height: 50px;
   width: 220px;
   border-radius: 4px;

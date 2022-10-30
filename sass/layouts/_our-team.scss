@@ -27,22 +27,7 @@
   padding: 30px 0;
 }
 
+// *- налаштування тексту в variables.scss //
 .our-team__subtitle {
-  color: var(--primery-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-
-.our-team__text {
-  color: var(--paragraph-tex-color);
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 16px;
-}
-

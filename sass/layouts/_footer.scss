@@ -6,7 +6,6 @@
 }
 
 .basement__subtitle {
-  color: var(--additional-text-color);
   margin-bottom: 20px;
 }
 
@@ -33,26 +32,7 @@
   }
 }
 
-.basement-contacts__link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  &:hover,
-  &:focus {
-    color: var(--text-hover-color);
-  }
-}
-
-.basement-contacts-address {
-  color: var(--additional-text-color);
-}
-.basement-contacts-mail,
-.basement-contacts-tel {
-  color: var(--footer-contact-color);
-}
+// *- налаштування тексту в variables.scss //
 
 /* footer social options (налаштування соц-мереж в підвалі) */
 .basement-social {
@@ -64,7 +44,7 @@
 
 // *- налаштування соц мереж в social.scss //
 
-// !- footer form - /
+// !- footer form  - basement-submit - /
 
 .basement-submit {
   display: block;
@@ -73,7 +53,7 @@
   margin-left: 93px;
 }
 
-.basement-submit-container {
+.basement-submit__container {
   display: flex;
 }
 
@@ -81,11 +61,6 @@
 
 .basement-submit__input {
   background-color: transparent;
-  font-style: sans-serif;
-  color: var(--additional-text-color);
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.003em;
 
   align-content: center;
   height: 50px;

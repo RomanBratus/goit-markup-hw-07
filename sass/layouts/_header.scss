@@ -10,12 +10,7 @@
   justify-content: center;
 }
 
-.topbar-navigation__link,
-.topbar-contacts__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-}
+
 
 .topbar-contacts__link {
   display: flex;
@@ -46,8 +41,8 @@
 }
 
 /* header navigation link options (налаштування рядків списку навігації) */
+// *- налаштування тексту в variables.scss //
 .topbar-navigation__link {
-  color: var(--primery-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -102,7 +97,6 @@
 
 /* header contacts color and hover (налаштування контактів в шапці) */
 .topbar-contacts__link {
-  color: var(--paragraph-tex-color);
   padding-top: 32px;
   padding-bottom: 32px;
   fill: var(--paragraph-tex-color);

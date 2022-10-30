@@ -4,7 +4,6 @@
 }
 
 .our-features-list {
-  color: var(--primery-text-color);
   list-style: none;
   display: flex;
   gap: 30px;
@@ -29,26 +28,8 @@
   fill: var(--primery-text-color);
 }
 
-/* title options (налаштування назви) */
-.our-features-title,
-.img-label,
-.basement__subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
+// *- налаштування тексту в variables.scss //
 .our-features-title,
 .img-label {
   margin-bottom: 10px;
-}
-
-/* paragraph options (налаштування параграфу) */
-.our-features-text {
-  color: var(--paragraph-tex-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
