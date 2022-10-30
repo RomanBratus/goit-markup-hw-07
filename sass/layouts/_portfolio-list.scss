@@ -28,11 +28,6 @@
 }
 
 .projects__image-overlay {
-  font-family: sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  color: var(--additional-text-color);
-
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
 
@@ -56,19 +51,6 @@
   padding: 20px 24px;
 }
 
-.projects__image-title {
-  color: var(--primery-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
 .projects__image-subtitle {
-  color: var(--paragraph-tex-color);
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-
   margin-top: 4px;
 }

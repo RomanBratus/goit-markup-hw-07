@@ -68,7 +68,7 @@ ol {
   text-transform: uppercase;
 }
 
-.hero-button {
+.main-button {
   color: var(--additional-text-color);
   font-family: inherit;
   font-weight: 700;
@@ -149,6 +149,38 @@ ol {
   letter-spacing: 0.003em;
 }
 
+.portfolio-btn__button {
+  color: var(--primery-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.projects__image-overlay {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--additional-text-color);
+}
+
+.projects__image-title {
+  color: var(--primery-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects__image-subtitle {
+  color: var(--paragraph-tex-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
 .hidden {
   position: absolute;
   white-space: nowrap;
@@ -169,12 +201,7 @@ ol {
   pointer-events: none;
 }
 
-.hero-div-btn {
-  display: flex;
-  justify-content: center;
-}
-
-.hero-button {
+.main-button {
   background: var(--text-hover-color);
   cursor: pointer;
   height: 50px;
@@ -185,7 +212,7 @@ ol {
   position: relative;
   overflow: hidden;
 }
-.hero-button:hover, .hero-button:focus {
+.main-button:hover, .main-button:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -352,14 +379,14 @@ ol {
 }
 
 .modal-list {
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
   font-family: sans-serif;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .modal-list:last-child {
   margin: 0;
@@ -411,10 +438,7 @@ ol {
   outline: var(--text-hover-color);
 }
 
-.modal-comment:hover,
-.modal-comment:focus,
-.modal-input:focus,
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus {
   border-color: var(--text-hover-color);
   fill: var(--text-hover-color);
   outline: var(--text-hover-color);
@@ -425,6 +449,11 @@ ol {
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
+}
+.modal-input:focus + .modal-input-icon {
+  border-color: var(--text-hover-color);
+  fill: var(--text-hover-color);
+  outline: var(--text-hover-color);
 }
 
 .modal-comment {
@@ -443,6 +472,11 @@ ol {
 }
 .modal-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+.modal-comment:hover, .modal-comment:focus {
+  border-color: var(--text-hover-color);
+  fill: var(--text-hover-color);
+  outline: var(--text-hover-color);
 }
 
 /* .modal-licence{} */
@@ -493,7 +527,6 @@ ol {
 }
 
 .licence {
-  /*     text-decoration: underline; */
   color: var(--text-hover-color);
   margin: 0;
   padding: 0;
@@ -627,6 +660,11 @@ ol {
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
 }
 
 /* -==================== our-features (текст під банером) ==================== */
@@ -843,13 +881,6 @@ ol {
 /* .portfolio-btn__item {} */
 /* button options (налаштування кнопки) */
 .portfolio-btn__button {
-  color: var(--primery-text-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
   /* btn style */
   background-color: var(--background-color-special);
   cursor: pointer;
@@ -894,10 +925,6 @@ ol {
 }
 
 .projects__image-overlay {
-  font-family: sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  color: var(--additional-text-color);
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
@@ -919,18 +946,6 @@ ol {
   padding: 20px 24px;
 }
 
-.projects__image-title {
-  color: var(--primery-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
 .projects__image-subtitle {
-  color: var(--paragraph-tex-color);
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
   margin-top: 4px;
 }/*# sourceMappingURL=main.css.map */

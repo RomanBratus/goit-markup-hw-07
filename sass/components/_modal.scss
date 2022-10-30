@@ -65,15 +65,16 @@
 }
 
 .modal-list {
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   gap: 4px;
 
-  font-family: sans-serif;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
   &:last-child {
     margin: 0;
   }
@@ -110,10 +111,7 @@
   }
 }
 
-.modal-comment:hover,
-.modal-comment:focus,
-.modal-input:focus,
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus {
   border-color: var(--text-hover-color);
   fill: var(--text-hover-color);
   outline: var(--text-hover-color);
@@ -124,6 +122,12 @@
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
+
+  .modal-input:focus + & {
+    border-color: var(--text-hover-color);
+    fill: var(--text-hover-color);
+    outline: var(--text-hover-color);
+  }
 }
 
 .modal-comment {
@@ -136,6 +140,13 @@
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--text-hover-color);
+    fill: var(--text-hover-color);
+    outline: var(--text-hover-color);
   }
 }
 
@@ -191,10 +202,11 @@
 }
 
 .licence {
-  /*     text-decoration: underline; */
   color: var(--text-hover-color);
+  
   margin: 0;
   padding: 0;
+
   border-bottom: 1px solid var(--text-hover-color);
 }
 
